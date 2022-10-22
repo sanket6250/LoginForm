@@ -1,0 +1,169 @@
+<!Doctype html>
+<html>
+<head>
+	
+	<script type="text/javascript">
+
+//----------------------------------------------------------------------------------		
+		
+		// function numLength() {
+
+			
+		// 	var data = document.getElementById("num").value;
+
+		// 	if(data.length > 10)
+		// 	{
+		// 		alert("Length Of Mobile Number should be 10 !");
+
+		// 		return false;
+		// 	}
+
+			
+		// 		return true;
+		// }
+
+//------------------------------------------------------------------------------
+		// function ConfirmPass() {
+
+		// 	var pass = document.getElementById("pass").value;
+
+		// 	var cpass = document.getElementById("cpass").value;
+
+		// 	if( pass != cpass)
+		// 	{
+  //       alert("Password Missmatch !!!")
+  //       return false;
+		// 	}
+
+
+		// 	return true;
+			
+		// }
+
+//----------------------------------------------------------------------------------		
+
+	function subData() {
+
+      var data = document.getElementById("num").value;
+
+      if(data.length >10)
+      {
+      	alert("Please ensure the entered mobile number should be 10 digit only..")
+      	return false;
+      }
+
+  		var pass = document.getElementById("pass").value;
+
+			var cpass = document.getElementById("cpass").value;
+
+			if( pass != cpass)
+			{
+        alert("Password Missmatch !!!")
+        return false;
+			}
+
+
+			return true;
+			
+		}
+
+
+	</script>
+
+
+
+	<style type="text/css">
+		
+    body
+    {
+    	padding-left: 350px;
+    	padding-top: 50px;
+    }
+    div
+    {
+	    text-align: justify;
+	    margin-left: 350px;
+	    margin-top: -60px;
+	    font-size: 20px;
+
+    }
+    
+    p
+    {
+       padding-top : 30px;
+	   margin-left: 50px;
+	   font-size: 30px;
+	   color: black;
+    }
+
+    form
+    {
+    	background-color: skyblue;
+    	width: 800px;
+    	height: 600px;
+    }
+    
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    input[type="number"]
+    {
+	   width: 400px;
+	   font-size: 20px;
+	   text-align: center;
+    }
+
+     input[type="submit"]
+    {
+	   width: 200px;
+	   height: 30px;
+	   margin-left: -50px;
+	   border-radius: 10px;
+	   background-color: brown;
+	   color: white;
+	   margin-top: 150px;
+    }
+    
+	</style>
+	<body background="background.jpg">
+		<form action="Registration"  onsubmit="return subData()">
+
+		<p>
+		Enter User Name :</p>
+	    <div >
+		<input type="text"  name="username" >	
+		</div>
+
+          
+        <p>
+		Enter Your Email : </p>
+		<div >
+		<input type="Email" name="email"  >	
+		</div>
+
+        <p>
+		Enter Mobile No : </p>
+		<div >
+		<input type="number" name="moNo" id="num" >	
+		</div>
+
+        <p>
+		Enter Password :</p>
+		<div >
+		<input type="text" name="password" placeholder="Enter 6-10 character password" id="pass" minlength="6" maxlength="10"  required>	 
+		</div>
+
+        <p>
+		Confirm Password : </p>
+		<div >
+		<input type="text" name="Cpassword" placeholder="Enter 6-10 character password" minlength="6" maxlength="10" id="cpass"  required>	
+		</div>
+
+		<div >
+		<input type="submit" id="sub" >	
+		</div>
+
+		</form>
+	</body>
+	</head>
+</html>

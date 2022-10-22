@@ -1,0 +1,115 @@
+<!Doctype html>
+<html>
+<title>
+	LOGINFORM
+</title>
+<head>
+
+	<script type="text/javascript">
+	
+	function check() {
+		
+		var id = document.getElementById("user").value;
+
+		var pass = document.getElementById("pass").value;
+
+
+		if(id=="" && pass=="")
+		{
+			alert("Please do not leave username and password field empty !!")
+
+			return false;
+		}
+
+		return true;
+	}
+		
+	</script>
+	<style type="text/css">
+
+       body
+       {
+       	padding-left: 500px;
+       	padding-top: 150px;
+       }
+        
+        .alignID
+        {
+        	
+           padding-top: 70px;
+        }
+
+        .alignPASS
+        {
+        	 padding-top: 70px;
+        }
+
+        .alignSUB
+        {
+           padding-left: 120px;	
+           padding-top: 50px;
+        }
+		.userid
+		{
+         font-size: 30px; 
+         padding-left: 50px;
+        
+
+		}
+
+		.pass
+		{
+			font-size: 30px; 
+           padding-left: 60px;
+		 
+		}
+		
+		.alignNEW
+		{
+	     padding-top: 30px;
+         padding-left: 60px;
+		}
+		
+		form
+		{
+			width: 550px;
+			height: 400px;
+			/*padding-left: 300px;*/
+			/*padding-right: 20px;*/
+		/*	padding-bottom: 40px;*/
+			background-color: white;
+		}
+	</style>
+	<body background="login.jpg" >
+		<form action="Login"   onsubmit="return check()" >
+
+			<div class="alignID">
+
+			<label class="userid" > UserName :
+			<input type="text" name="username"  style="font-size: 25px; color: red; background-color: paleturquoise;" id="user" >  </label>  
+
+			</div>
+
+
+			<div class="alignPASS">
+
+			<label class="pass"> Password  : 
+			<input type="text" name="password"  style="font-size: 25px; color: red;background-color: paleturquoise;" id="pass"> </label>
+
+			</div>
+
+             <div class="alignSUB">
+             <input type="submit" name="" id="sub" style="font-size: 30px;background-color: darkgray;border-radius: 15px; width: 300px;" >
+             	
+             </div>
+
+             <div class="alignNEW">
+         	<input type="button" value="New Registration" onclick="window.location.href='Registration Form.html'" id="reg" style="font-size:20px; background-color: indianred; border-radius: 10px; width: 200px;" >
+         	 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+         	<input type="button" value="Forgot Password" onclick="window.location.href='ChangePassword.html'" id="fogt"  style="font-size:20px; background-color: palevioletred; border-radius: 10px; width:200px;">
+         </div>
+		
+		</form>
+	</body>
+</head>
+</html>

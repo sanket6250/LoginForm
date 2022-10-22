@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<style>
+html
+{
+	background-color: lightskyblue;
+}
+h1
+{
+	text-align: center;
+	color: darkred;
+}
+div
+{
+	text-align: justify;
+	margin-left: 800px;
+	margin-top: -60px;
+	font-size: 20px;
+
+}
+p
+{
+	margin-left: 400px;
+	font-size: 30px;
+	color: black;
+}
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"]
+{
+	width: 400px;
+	font-size: 20px;
+	text-align: center;
+}
+input[type="radio"],
+input[type="checkbox"]
+{
+	height: 30px;
+	width: 50px;
+}
+input[type="submit"]
+{
+	width: 200px;
+	height: 30px;
+	margin-left: -250px;
+	border-radius: 10px;
+	background-color: brown;
+	color: white;
+}
+input[type="reset"]
+{
+	width: 200px;
+	height: 30px;
+	margin-left: 50px;
+	border-radius: 10px;
+	background-color: brown;
+	color: white;
+}
+</style>
+<title> Registration Form </title>
+<link rel="stylesheet" type="text/css" href="Student_registration.css"/>
+</head>
+<body>
+	<h1> <u>  Student Registration Form </u> </h1> <br> <br>
+<form>
+<p> First Name : </p>
+<div>
+<input type="text" name="t1">
+</div> <br> <br>
+<p> Last Name:  </p>
+<div>
+<input type="text" name="t2">
+</div>  <br> <br>
+<p> Date Of Birth(DOB): </p>
+<div>
+<input type="date" name="t3">
+</div>  <br> <br>
+<p> Email-ID: </p>
+<div>
+<input type="email" name="t4">
+</div>  <br> <br>
+<p> Mobile No:  </p>
+<div>
+<input type="number" name="t5" maxlength="10">
+</div>  <br> <br>
+<p> Gender:  </p>
+<div>
+<input type="radio" name="r">Male
+<input type="radio" name="r">Female
+</div>  <br> <br>
+<p> Address:  </p>
+<div>
+<textarea id="add" name="add" cols="30" row="4"> </textarea>
+</div>  <br> <br>
+<p> City:  </p>
+<div>
+<input type="text" name="t6" maxlength="20">
+</div>  <br> <br>
+<p> Pin Code:  </p>
+<div>
+<input type="number" name="t7" maxlength="6">
+</div>  <br> <br>
+<p> State:  </p>
+<div>
+<input type="text" name="t8" maxlength="20">
+</div>  <br> <br>
+<p> Country:  </p>
+<div>
+<input type="text" name="t9" maxlength="20">
+</div>  <br> <br>
+<p> Hobbies:   </p>
+<div>
+<input type="checkbox" name="c1">Drawing
+<input type="checkbox" name="c2">Singing
+<input type="checkbox" name="c3">Dancing
+<input type="checkbox" name="c4">Sketching
+<input type="checkbox" name="c5">Others
+<input type="text" name="10" placeholder="Ex.Riding" maxlength="50"> (Max 50 Characters Allowed)
+</div> <br> <br>
+<p> Qualification:  </p>
+<div>
+<input type="checkbox" name="h1"> High School(10th) <br> 
+<input type="checkbox" name="h2"> Higher School(12th) <br>
+<input type="checkbox" name="h3"> Graduation(Bachelors) <br>
+<input type="checkbox" name="h4"> Post Graduation(Masters) <br>
+<input type="checkbox" name="h5"> PhD <br>
+</div> <br> <br>
+<p> Courses Applied For: </p>
+<div>
+<input type="radio" name="q"> BE/B.Tech <br>
+<input type="radio" name="q"> B.COM <br>
+<input type="radio" name="q"> B.SC <br>
+<input type="radio" name="q"> BA <br>
+<input type="radio" name="q"> MCA <br>
+<input type="radio" name="q"> M.COM <br>
+</div> <br> <br> <br> <br> <br> <br>
+
+      <div align="center">
+	<input type="submit">
+	<input type="reset">
+      </div>
+
+</form>
+</body>
+</html>
